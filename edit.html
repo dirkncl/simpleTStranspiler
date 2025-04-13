@@ -1,0 +1,340 @@
+<html>
+  <head>
+    <style>
+      .numbered {
+        width: auto;
+        height: 500px;
+        font-size: 11px;
+        font-family: monospace;
+        line-height: 15px;
+        font-weight: 500;
+        margin: 0;
+        padding: 0;
+        resize: both;
+        color: #ffa;
+        border: 0;
+        background-color: #222;
+        white-space: pre;
+        overflow: auto;
+      }
+      
+      
+      /* supported only in opera */
+      .numbered {
+        scrollbar-arrow-color: #ee8;
+        scrollbar-base-color: #444;
+        scrollbar-track-color: #666;
+        scrollbar-face-color: #444;
+        /* outer light */
+        scrollbar-3dlight-color: #444;
+        /* inner light */
+        scrollbar-highlight-color: #666;
+        /* outer dark */
+        scrollbar-darkshadow-color: #444;
+        /* inner dark */
+        scrollbar-shadow-color: #222;
+      }
+      
+      
+      /* chrome scrollbars */
+      
+      textarea::-webkit-scrollbar {
+        width: 16px;
+        background-color: #444;
+        cursor: pointer;
+      }
+      
+      textarea::-webkit-scrollbar-track {
+        background-color: #333;
+        cursor: pointer;
+      }
+      
+      textarea::-webkit-scrollbar-corner {
+        background-color: #484;
+        -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+      }
+      
+      textarea::-webkit-scrollbar-thumb {
+        background-color: #444;
+        -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+        cursor: pointer;
+      }
+    </style>
+  
+  </head>
+  <body>
+    <center><h4  id="vers" ></h4></center>
+    <span>use: edit.html?[[dir/][dir/]file].[ts|tsx] -- </span>
+    <span>example: 'edit.html?building-a-raytracer.ts -- '</span>
+    <span><a href='edit.html?examples/building-a-raytracer.ts'>building-a-raytracer</a></span>
+    <button id='save'>Save js to file</button><button id='run'>run js</button>
+    <table style='display:flex;flex:1'>
+     <td>
+       <div>Typescript</div>
+       <span id='tswrapper'><textarea id='ts' rows='36' cols='70' style='resize:none;flex: 1' class='numbered'></textarea></span>
+     </td>
+     <span>&nbsp;&nbsp;&nbsp;</span>
+     
+     <td>
+     
+       <div>Javascript</div>
+       <span id='jswrapper'><textarea id='js' rows='36' cols='70' readonly style='resize:none;flex: 1' class='numbered'></textarea></span>
+     </td>
+    </table>
+    
+    
+  </body>
+  <script type="module">
+    import * as ts from './typescript/typescript.js'
+    
+    window.ts = ts.typescript
+  
+    var inputFileName
+  
+    var tsOptions = {
+      //target: window.ts.ScriptTarget.ES3,      //0
+      //target: window.ts.ScriptTarget.ES5,      //1
+      //target: window.ts.ScriptTarget.ES2015,   //2
+      //target: window.ts.ScriptTarget.ES2016,   //3
+      //target: window.ts.ScriptTarget.ES2017,   //4
+      //target: window.ts.ScriptTarget.ES2018,   //5
+      //target: window.ts.ScriptTarget.ES2019,   //6
+      //target: window.ts.ScriptTarget.ES2020,   //7
+      target: window.ts.ScriptTarget.ESNext,     //99
+      //target: window.ts.ScriptTarget.JSON,     //100
+      //target: window.ts.ScriptTarget.Latest,   //99
+      //
+      //jsx: window.ts.JsxEmit.None,             //0
+      jsx: window.ts.JsxEmit.Preserve,           //1
+      //jsx: window.ts.JsxEmit.React,            //2
+      //jsx: window.ts.JsxEmit.ReactNative,      //3
+      //jsx: window.ts.JsxEmit.ReactJSX,         //4
+      //jsx: window.ts.JsxEmit.ReactJSXDev,      //5
+      //
+      module: window.ts.ModuleKind.ESNext,       //0
+      //module: window.ts.ModuleKind.CommonJS,   //1
+      //module: window.ts.ModuleKind.AMD,        //2
+      //module: window.ts.ModuleKind.UMD,        //3
+      //module: window.ts.ModuleKind.System,     //4
+      //module: window.ts.ModuleKind.ES2015,     //5
+      //module: window.ts.ModuleKind.ES2020,     //6
+      //module: window.ts.ModuleKind.ESNext,     //99
+      
+      
+      noImplicitAny: true,
+      strictNullChecks: true,
+      strictFunctionTypes: true,
+      strictBindCallApply: true,
+      strictPropertyInitialization: true,
+      noImplicitThis: true,
+      noImplicitReturns: true,
+  
+      alwaysStrict: false,
+      allowUnreachableCode: false,
+      allowUnusedLabels: false,
+  
+      downlevelIteration: false,
+      noEmitHelpers: false,
+      noLib: false,
+      noStrictGenericChecks: false,
+      noUnusedLocals: false,
+      noUnusedParameters: false,
+  
+      esModuleInterop: false,
+      preserveConstEnums: true,
+      removeComments: false,
+      skipLibCheck: false,
+  
+      experimentalDecorators: false,
+      emitDecoratorMetadata: false,
+      
+      sourceMap: false,
+      inlineSourceMap: false
+  
+    }
+   
+    async function tsLoad(tsFile) {
+  
+    const tsCode = await (await fetch(tsfile)).text()
+  
+    const jsCode = window.ts.transpile(tsCode, tsOptions);
+    
+      return { tsCode, jsCode }
+    
+    }
+  
+    var tsfile = window.location.search.substr(1)||'examples/greeter.ts'
+
+    inputFileName = tsfile.split('/').pop()
+
+    
+    var { tsCode, jsCode } = await tsLoad(tsfile)
+    var tsEl = window.document.getElementById('ts')
+    var jsEl = window.document.getElementById('js')
+    tsEl.value = tsCode
+    jsEl.value = jsCode
+    
+    tsEl.addEventListener('keyup', function(){
+       update()
+    })
+    
+    function update() {
+      jsEl.value = window.ts.transpile(tsEl.value, tsOptions);
+    }
+    function getResult(){
+      return jsEl.value
+    }
+    
+    function writeFile(fileName, text) {
+      var blob = new Blob([text], {type: "text/plain;charset=utf-8"});
+      var elm = document.createElement("a");
+      elm.download = fileName;
+      elm.href = window.URL.createObjectURL(blob);
+      elm.style.display = "none";
+      document.body.appendChild(elm);
+      elm.click();
+      document.body.removeChild(elm);
+    }
+        
+    function saveFile() {
+      if(inputFileName===null){
+        writeFile("out.js", getResult())
+      }else{
+        var fileName = inputFileName
+        var fn
+        if(fileName) {
+          if(fileName.endsWith(".ts")){
+            fn = fileName.replace(".ts",".js")
+          }
+          if(fileName.endsWith(".tsx")){
+            fn = fileName.replace(".tsx",".jsx")
+          }
+          if(fileName.endsWith(".mts")){
+            fn = fileName.replace(".mts",".mjs")
+          }
+          if(fileName.endsWith(".js")){
+            fn = fileName
+          }
+    
+          writeFile(fn, getResult())
+        }
+      }
+    }
+  
+    var saveJsToFile = window.document.getElementById('save')
+  
+    saveJsToFile.addEventListener('click', function(){
+       saveFile()
+    })
+    
+    function evalJS(scr) {
+      var pop = window.open();
+      var s = pop.window.document.createElement("script");
+      s.textContent = scr;
+      pop.window.document.body.appendChild(s);
+    }
+    
+    function runJavaScript() {
+      setTimeout(() => {
+        var js = getResult()
+        evalJS(js)
+      }, 0);
+    }
+  
+    var runJsToFile = window.document.getElementById('run')
+    
+    var version = window.document.getElementById('vers')
+    version.innerHTML = 'Typescript: '+ts.version
+  
+    runJsToFile.addEventListener('click', function(){
+       runJavaScript()
+    })
+  </script>
+
+  <script type="text/javascript">
+  //
+  // desc: demonstrates textarea line numbers using canvas paint 
+  // auth: nikola bozovic <nigerija@gmail>
+  //
+  function numbered(wrapp, id) {
+    
+    var TextAreaLineNumbersWithCanvas = function() {
+      var div = document.getElementById(wrapp);
+      var cssTable = 'padding:0px 0px 0px 0px!important; margin:0px 0px 0px 0px!important; font-size:1px;line-height:0px; width:auto;';
+      var cssTd1 = 'border:1px #345 solid; border-right:0px; vertical-align:top; width:1px; background: #303030';
+      var cssTd2 = 'border:1px #345 solid; border-left:0px; vertical-align:top;';
+      var cssButton = 'width:120px; height:40px; border:1px solid #333 !important; border-bottom-color: #484!important; color:#ffe; background-color:#222;';
+      var cssCanvas = 'border:0px; background-color:#1c1c20; margin-top:0px; padding-top:0px;';
+    
+      // LAYOUT (table 2 panels)
+      var table = document.createElement('table');
+      table.setAttribute('cellspacing', '0');
+      table.setAttribute('cellpadding', '0');
+      table.setAttribute('style', cssTable);
+      var tr = document.createElement('tr');
+      var td1 = document.createElement('td');
+      td1.setAttribute('style', cssTd1);
+      var td2 = document.createElement('td');
+      td2.setAttribute('style', cssTd2);
+      tr.appendChild(td1);
+      tr.appendChild(td2);
+      table.appendChild(tr);
+    
+      // TEXTAREA
+      var ta = this.evalnode = document.getElementById(id);
+    
+      // TEXTAREA NUMBERS (Canvas)
+      var canvas = document.createElement('canvas');
+      canvas.width = 48; // must not set width & height in css !!!
+      canvas.height = 500; // must not set width & height in css !!!
+      canvas.setAttribute('style', cssCanvas);
+      ta.canvasLines = canvas;
+      td1.appendChild(canvas);
+      td2.appendChild(ta);
+      div.appendChild(table);
+    
+      // PAINT LINE NUMBERS
+      ta.paintLineNumbers = function() {
+        try {
+          var canvas = this.canvasLines;
+          if (canvas.height != this.clientHeight) canvas.height = this.clientHeight; // on resize
+          var ctx = canvas.getContext("2d");
+          ctx.fillStyle = "#303030";
+          ctx.fillRect(0, 0, 42, this.scrollHeight + 1);
+          ctx.fillStyle = "#808080";
+          ctx.font = "11px monospace"; // NOTICE: must match TextArea font-size(11px) and lineheight(15) !!!
+          var startIndex = Math.floor(this.scrollTop / 15, 0);
+          var endIndex = startIndex + Math.ceil(this.clientHeight / 15, 0);
+          for (var i = startIndex; i < endIndex; i++) {
+            var ph = 10 - this.scrollTop + (i * 15);
+            var text = '' + (1 + i); // line number
+            ctx.fillText(text, 40 - (text.length * 6), ph);
+          }
+        } catch (e) {
+          alert(e);
+        }
+      };
+      ta.onscroll = function(ev) {
+        this.paintLineNumbers();
+      };
+      ta.onmousedown = function(ev) {
+        this.mouseisdown = true;
+      }
+      ta.onmouseup = function(ev) {
+        this.mouseisdown = false;
+        this.paintLineNumbers();
+      };
+      ta.onmousemove = function(ev) {
+        if (this.mouseisdown) this.paintLineNumbers();
+      };
+    
+      // make sure it's painted
+      ta.paintLineNumbers();
+      return ta;
+    };
+     return TextAreaLineNumbersWithCanvas()
+    }
+    var ta = numbered('tswrapper', 'ts');
+    ta.value = numbered.toString();
+  </script>
+</html>

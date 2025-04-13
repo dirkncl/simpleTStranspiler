@@ -1,0 +1,106 @@
+<html>
+  <head>
+    <script>
+    
+    </script>
+  
+  </head>
+  <body>
+    <pre></pre>
+  </body>
+  <script type="module">
+    import * as ts from './typescript/typescript.js'
+    
+    window.ts = ts.typescript;
+    
+    const defaultCompilerOptions = {
+      target: window.ts.ScriptTarget.ESNext,
+      jsx: window.ts.JsxEmit.Preserve,
+      module: window.ts.ModuleKind.ESNext,
+      
+      noImplicitAny: true,
+      strictNullChecks: true,
+      strictFunctionTypes: true,
+      strictBindCallApply: true,
+      strictPropertyInitialization: true,
+      noImplicitThis: true,
+      noImplicitReturns: true,
+  
+      alwaysStrict: false,
+      allowUnreachableCode: false,
+      allowUnusedLabels: false,
+  
+      downlevelIteration: false,
+      noEmitHelpers: false,
+      noLib: false,
+      noStrictGenericChecks: false,
+      noUnusedLocals: false,
+      noUnusedParameters: false,
+  
+      esModuleInterop: false,
+      preserveConstEnums: true,
+      removeComments: false,
+      skipLibCheck: false,
+  
+      experimentalDecorators: false,
+      emitDecoratorMetadata: false,
+      
+      sourceMap: false,
+      inlineSourceMap: false
+    }
+    
+    var inputFileName
+    
+    var tsfile = window.location.search.substr(1)||'./examples/greeter.ts'
+    
+    inputFileName = tsfile.split('/').pop()
+    
+    const tsCode = await (await fetch(tsfile)).text()
+    
+    const jsCode = window.ts.transpile(tsCode, defaultCompilerOptions);
+    
+    function getResult() {
+      return jsCode
+    }
+    function writeFile(fileName, text) {
+      var blob = new Blob([text], {type: "text/plain;charset=utf-8"});
+      var elm = document.createElement("a");
+      elm.download = fileName;
+      elm.href = window.URL.createObjectURL(blob);
+      elm.style.display = "none";
+      document.body.appendChild(elm);
+      elm.click();
+      document.body.removeChild(elm);
+    }
+        
+    function saveFile() {
+      if(inputFileName===null){
+        writeFile("out.js", getResult())
+      }else{
+        var fileName = inputFileName
+        var fn
+        if(fileName) {
+          if(fileName.endsWith(".ts")){
+            fn = fileName.replace(".ts",".js")
+          }
+          if(fileName.endsWith(".tsx")){
+            fn = fileName.replace(".tsx",".jsx")
+          }
+          if(fileName.endsWith(".mts")){
+            fn = fileName.replace(".mts",".mjs")
+          }
+          if(fileName.endsWith(".js")){
+            fn = fileName
+          }
+    
+          writeFile(fn, getResult())
+        }
+      }
+    }
+
+    document.getElementsByTagName('pre')[0].textContent += jsCode;
+    
+    saveFile()
+  </script>
+
+</html>
