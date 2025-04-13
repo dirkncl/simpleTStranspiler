@@ -3,7 +3,7 @@ import {
   createQueue,
   Debug,
   JsTyping,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 import {
   ActionInvalidate,
@@ -17,7 +17,7 @@ import {
   EventTypesRegistry,
   LogLevel,
   stringifyIndented,
-} from "./_namespaces/ts.server.js";
+} from "./namespaces/ts.server.js";
 
 /** @internal */
 export class TypingsInstallerAdapter {

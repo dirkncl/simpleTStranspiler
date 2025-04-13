@@ -3,7 +3,7 @@ import {
   CompletionTriggerKind,
   OrganizeImportsMode,
   SemicolonPreference,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 // These types/enums used to be defined in duplicate here and exported. They are re-exported to avoid breaking changes.
 export {

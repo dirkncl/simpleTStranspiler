@@ -100,7 +100,7 @@ import {
   WatchDirectoryFlags,
   WatchLogLevel,
   WatchType,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 import {
   ActionInvalidate,
@@ -135,7 +135,7 @@ import {
   scriptInfoIsContainedByDeferredClosedProject,
   ThrottledOperations,
   toNormalizedPath,
-} from "./_namespaces/ts.server.js";
+} from "./namespaces/ts.server.js";
 
 import * as protocol from "./protocol.js";
 

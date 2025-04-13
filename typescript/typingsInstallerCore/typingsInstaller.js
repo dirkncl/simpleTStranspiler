@@ -16,7 +16,7 @@ import {
   Version,
   version,
   versionMajorMinor,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 import {
   ActionPackageInstalled,
@@ -26,7 +26,7 @@ import {
   EventEndInstallTypes,
   EventTypesRegistry,
   stringifyIndented,
-} from "./_namespaces/ts.server.js";
+} from "./namespaces/ts.server.js";
 
 
 const nullLog = {

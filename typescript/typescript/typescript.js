@@ -1,4 +1,4 @@
-import { Debug, LogLevel, } from "./_namespaces/ts.js";
+import { Debug, LogLevel, } from "./namespaces/ts.js";
 if (typeof console !== "undefined") {
     Debug.loggingHost = {
         log(level, s) {
@@ -15,4 +15,4 @@ if (typeof console !== "undefined") {
         },
     };
 }
-export * from "./_namespaces/ts.js";
+export * from "./namespaces/ts.js";

@@ -5,9 +5,9 @@ import {
   createTextSpan,
   Debug,
   unchangedTextChangeRange,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
-import { emptyArray } from "./_namespaces/ts.server.js";
+import { emptyArray } from "./namespaces/ts.server.js";
 
 const lineCollectionCapacity = 4;
 

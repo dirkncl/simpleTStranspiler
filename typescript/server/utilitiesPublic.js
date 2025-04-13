@@ -2,7 +2,7 @@ import {
   getNormalizedAbsolutePath,
   isRootedDiskPath,
   normalizePath,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 export var LogLevel;
 (function (LogLevel) {

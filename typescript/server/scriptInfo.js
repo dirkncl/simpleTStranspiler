@@ -24,7 +24,7 @@ import {
   ScriptKind,
   ScriptSnapshot,
   some,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 import {
   Errors,
@@ -35,7 +35,7 @@ import {
   isProjectDeferredClose,
   maxFileSize,
   ScriptVersionCache,
-} from "./_namespaces/ts.server.js";
+} from "./namespaces/ts.server.js";
 
 /** @internal */
 export class TextStorage {

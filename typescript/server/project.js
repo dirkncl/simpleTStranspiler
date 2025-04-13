@@ -1,4 +1,4 @@
-import * as ts from "./_namespaces/ts.js";
+import * as ts from "./namespaces/ts.js";
 import {
   addRange,
   append,
@@ -89,7 +89,7 @@ import {
   updateMissingFilePathsWatch,
   WatchDirectoryFlags,
   WatchType,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 import {
   ActionInvalidate,
@@ -103,7 +103,7 @@ import {
   nullTypingsInstaller,
   toNormalizedPath,
   updateProjectIfDirty,
-} from "./_namespaces/ts.server.js";
+} from "./namespaces/ts.server.js";
 
 // export enum ProjectKind {
 //     Inferred,

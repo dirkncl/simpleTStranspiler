@@ -6,7 +6,7 @@ import {
   getDirectoryPath,
   Ternary,
   tryFileExists,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 /** @internal */
 export function createPackageJsonCache(host) {

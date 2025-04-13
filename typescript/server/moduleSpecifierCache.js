@@ -1,4 +1,4 @@
-import { closeFileWatcher, Debug, nodeModulesPathPart, } from "./_namespaces/ts.js";
+import { closeFileWatcher, Debug, nodeModulesPathPart, } from "./namespaces/ts.js";
 
 /** @internal */
 export function createModuleSpecifierCache(host) {

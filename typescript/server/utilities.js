@@ -1,5 +1,5 @@
-import { getBaseFileName } from "./_namespaces/ts.js";
-import { LogLevel, } from "./_namespaces/ts.server.js";
+import { getBaseFileName } from "./namespaces/ts.js";
+import { LogLevel, } from "./namespaces/ts.server.js";
 
 /** @internal */
 export class ThrottledOperations {

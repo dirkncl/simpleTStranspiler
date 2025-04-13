@@ -78,7 +78,7 @@ import {
   tracing,
   unmangleScopedPackageName,
   version,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 import {
   CloseFileWatcherEvent,
@@ -112,7 +112,7 @@ import {
   stringifyIndented,
   toNormalizedPath,
   updateProjectIfDirty,
-} from "./_namespaces/ts.server.js";
+} from "./namespaces/ts.server.js";
 
 import * as protocol from "./protocol.js";
 
