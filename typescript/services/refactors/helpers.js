@@ -9,7 +9,7 @@ import {
   isPropertyAccessExpression,
   skipAlias,
   SymbolFlags,
-} from "../_namespaces/ts.js";
+} from "../namespaces/ts.js";
 
 import { addImportsForMovedSymbols } from "./moveToFile.js";
 

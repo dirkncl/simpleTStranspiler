@@ -5,7 +5,7 @@ import {
   RuleAction,
   RuleFlags,
   SmartIndenter,
-} from "../_namespaces/ts.formatting.js";
+} from "../namespaces/ts.formatting.js";
 
 import {
   canHaveModifiers,
@@ -50,7 +50,7 @@ import {
   startEndContainsRange,
   startEndOverlapsWithStartEnd,
   SyntaxKind,
-} from "../_namespaces/ts.js";
+} from "../namespaces/ts.js";
 
 /** @internal */
 export function createTextRangeWithKind(pos, end, kind) {

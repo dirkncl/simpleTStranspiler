@@ -1,6 +1,6 @@
 import {
   createTextRangeWithKind,
-} from "../_namespaces/ts.formatting.js";
+} from "../namespaces/ts.formatting.js";
 
 import {
   append,
@@ -16,7 +16,7 @@ import {
   last,
   ScriptTarget,
   SyntaxKind,
-} from "../_namespaces/ts.js";
+} from "../namespaces/ts.js";
 
 
 const standardScanner = createScanner(ScriptTarget.Latest, /*skipTrivia*/ false, LanguageVariant.Standard);

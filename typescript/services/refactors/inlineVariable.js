@@ -34,9 +34,9 @@ import {
   textChanges,
   textRangeContainsPositionInclusive,
   walkUpParenthesizedExpressions,
-} from "../_namespaces/ts.js";
+} from "../namespaces/ts.js";
 
-import { registerRefactor, } from "../_namespaces/ts.refactor.js";
+import { registerRefactor, } from "../namespaces/ts.refactor.js";
 
 const refactorName = "Inline variable";
 const refactorDescription = getLocaleSpecificMessage(Diagnostics.Inline_variable);

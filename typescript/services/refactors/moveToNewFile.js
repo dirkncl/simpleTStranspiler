@@ -14,7 +14,7 @@ import {
   last,
   ModuleKind,
   textChanges,
-} from "../_namespaces/ts.js";
+} from "../namespaces/ts.js";
 
 import {
   addNewFileToTsconfig,
@@ -23,7 +23,7 @@ import {
   getStatementsToMove,
   getUsageInfo,
   registerRefactor,
-} from "../_namespaces/ts.refactor.js";
+} from "../namespaces/ts.refactor.js";
 
 
 const refactorName = "Move to a new file";

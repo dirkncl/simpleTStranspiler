@@ -111,13 +111,13 @@ import {
   visitEachChild,
   visitNode,
   visitNodes,
-} from "../_namespaces/ts.js";
+} from "../namespaces/ts.js";
 
 import {
   getIdentifierForNode,
   refactorKindBeginsWith,
   registerRefactor,
-} from "../_namespaces/ts.refactor.js";
+} from "../namespaces/ts.refactor.js";
 
 
 const refactorName = "Extract Symbol";

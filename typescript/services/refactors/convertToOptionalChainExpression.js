@@ -23,12 +23,12 @@ import {
   skipParentheses,
   SyntaxKind,
   textChanges,
-} from "../_namespaces/ts.js";
+} from "../namespaces/ts.js";
 
 import {
   isRefactorErrorInfo,
   registerRefactor,
-} from "../_namespaces/ts.refactor.js";
+} from "../namespaces/ts.refactor.js";
 
 const refactorName = "Convert to optional chain expression";
 const convertToOptionalChainExpressionMessage = getLocaleSpecificMessage(Diagnostics.Convert_to_optional_chain_expression);

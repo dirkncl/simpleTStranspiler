@@ -20,13 +20,13 @@ import {
   rangeContainsRange,
   SyntaxKind,
   textChanges,
-} from "../_namespaces/ts.js";
+} from "../namespaces/ts.js";
 
 import {
   isRefactorErrorInfo,
   refactorKindBeginsWith,
   registerRefactor,
-} from "../_namespaces/ts.refactor.js";
+} from "../namespaces/ts.refactor.js";
 
 const refactorName = "Add or remove braces in an arrow function";
 const refactorDescription = getLocaleSpecificMessage(Diagnostics.Add_or_remove_braces_in_an_arrow_function);

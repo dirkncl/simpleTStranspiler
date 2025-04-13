@@ -1,4 +1,4 @@
-import { getRangeOfEnclosingComment, } from "../_namespaces/ts.formatting.js";
+import { getRangeOfEnclosingComment, } from "../namespaces/ts.formatting.js";
 import {
   CharacterCodes,
   contains,
@@ -26,7 +26,7 @@ import {
   rangeContainsStartEnd,
   skipTrivia,
   SyntaxKind,
-} from "../_namespaces/ts.js";
+} from "../namespaces/ts.js";
 
 /** @internal */
 export var SmartIndenter;

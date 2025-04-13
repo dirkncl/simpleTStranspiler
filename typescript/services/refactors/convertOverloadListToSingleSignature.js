@@ -23,9 +23,9 @@ import {
   some,
   SyntaxKind,
   textChanges,
-} from "../_namespaces/ts.js";
+} from "../namespaces/ts.js";
 
-import { registerRefactor } from "../_namespaces/ts.refactor.js";
+import { registerRefactor } from "../namespaces/ts.refactor.js";
 
 const refactorName = "Convert overload list to single signature";
 const refactorDescription = getLocaleSpecificMessage(Diagnostics.Convert_overload_list_to_single_signature);

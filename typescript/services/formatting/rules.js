@@ -3,7 +3,7 @@ import {
   FormattingRequestKind,
   RuleAction,
   RuleFlags,
-} from "../_namespaces/ts.formatting.js";
+} from "../namespaces/ts.formatting.js";
 
 import {
   contains,
@@ -23,7 +23,7 @@ import {
   SemicolonPreference,
   SyntaxKind,
   typeKeywords,
-} from "../_namespaces/ts.js";
+} from "../namespaces/ts.js";
 
 
 /** @internal */

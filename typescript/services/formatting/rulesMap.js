@@ -1,5 +1,5 @@
-import { anyContext, getAllRules, RuleAction, } from "../_namespaces/ts.formatting.js";
-import { Debug, every, SyntaxKind, } from "../_namespaces/ts.js";
+import { anyContext, getAllRules, RuleAction, } from "../namespaces/ts.formatting.js";
+import { Debug, every, SyntaxKind, } from "../namespaces/ts.js";
 /** @internal */
 export function getFormatContext(options, host) {
     return { options, getRules: getRulesMap(), host };

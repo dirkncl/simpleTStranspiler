@@ -112,12 +112,12 @@ import {
   textChanges,
   TransformFlags,
   tryCast,
-} from "../_namespaces/ts.js";
+} from "../namespaces/ts.js";
 
 import {
   addTargetFileImports,
   registerRefactor,
-} from "../_namespaces/ts.refactor.js";
+} from "../namespaces/ts.refactor.js";
 
 
 const refactorNameForMoveToFile = "Move to file";

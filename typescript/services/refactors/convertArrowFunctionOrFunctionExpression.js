@@ -33,12 +33,12 @@ import {
   suppressLeadingTrivia,
   SyntaxKind,
   textChanges,
-} from "../_namespaces/ts.js";
+} from "../namespaces/ts.js";
 
 import {
   refactorKindBeginsWith,
   registerRefactor,
-} from "../_namespaces/ts.refactor.js";
+} from "../namespaces/ts.refactor.js";
 
 
 const refactorName = "Convert arrow function or function expression";

@@ -1,4 +1,4 @@
-import { Debug, findChildOfKind, SyntaxKind, } from "../_namespaces/ts.js";
+import { Debug, findChildOfKind, SyntaxKind, } from "../namespaces/ts.js";
 
 /** @internal */
 export var FormattingRequestKind;

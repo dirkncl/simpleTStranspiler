@@ -15,13 +15,13 @@ import {
   NodeBuilderFlags,
   SyntaxKind,
   textChanges,
-} from "../_namespaces/ts.js";
+} from "../namespaces/ts.js";
 
 import {
   isRefactorErrorInfo,
   refactorKindBeginsWith,
   registerRefactor,
-} from "../_namespaces/ts.refactor.js";
+} from "../namespaces/ts.refactor.js";
 
 
 const refactorName = "Infer function return type";

@@ -1,4 +1,4 @@
-import { emptyArray, } from "../_namespaces/ts.js";
+import { emptyArray, } from "../namespaces/ts.js";
 /** @internal */
 export const anyContext = emptyArray;
 // dprint-ignore
