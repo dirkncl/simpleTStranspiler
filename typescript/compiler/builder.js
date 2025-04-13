@@ -60,7 +60,7 @@ import {
   toPath,
   tryAddToSet,
   version,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 // // dprint-ignore
 // /** @internal */

@@ -1,4 +1,4 @@
-import { combinePaths, Extension, fileExtensionIs, } from "./_namespaces/ts.js";
+import { combinePaths, Extension, fileExtensionIs, } from "./namespaces/ts.js";
 
 // /** @internal */
 // export enum UpToDateStatusType {

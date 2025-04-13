@@ -41,7 +41,7 @@ import {
   WatchDirectoryKind,
   WatchFileKind,
   writeFileEnsuringDirectories,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 /**
  * djb2 hashing algorithm

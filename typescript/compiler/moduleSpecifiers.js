@@ -104,7 +104,7 @@ import {
   tryGetExtensionFromPath,
   tryParseJson,
   tryParsePatterns,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 
 

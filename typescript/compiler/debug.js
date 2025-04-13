@@ -1,4 +1,4 @@
-import * as ts from "./_namespaces/ts.js";
+import * as ts from "./namespaces/ts.js";
 import {
   AssertionLevel,
   compareValues,
@@ -64,7 +64,7 @@ import {
   unescapeLeadingUnderscores,
   VarianceFlags,
   zipWith,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 
 // /** @internal */

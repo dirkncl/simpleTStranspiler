@@ -1,4 +1,4 @@
-import { CharacterCodes, Comparison, Debug, } from "./_namespaces/ts.js";
+import { CharacterCodes, Comparison, Debug, } from "./namespaces/ts.js";
 
 /* eslint-disable @typescript-eslint/prefer-for-of */
 /** @internal */

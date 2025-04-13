@@ -304,7 +304,7 @@ import {
   TypeFlags,
   TypePredicateKind,
   unescapeLeadingUnderscores,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 /** @internal */
 export const resolvingEmptyArray = [];

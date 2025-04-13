@@ -1,4 +1,4 @@
-import * as ts from "./_namespaces/ts.js";
+import * as ts from "./namespaces/ts.js";
 import {
   base64encode,
   canHaveLocals,
@@ -196,8 +196,8 @@ import {
   version,
   writeCommentRange,
   writeFile,
-} from "./_namespaces/ts.js";
-import * as performance from "./_namespaces/ts.performance.js";
+} from "./namespaces/ts.js";
+import * as performance from "./namespaces/ts.performance.js";
 
 const brackets = createBracketsMap();
 

@@ -7,9 +7,9 @@ import {
   timestamp,
   TypeFlags,
   unescapeLeadingUnderscores,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
-import * as performance from "./_namespaces/ts.performance.js";
+import * as performance from "./namespaces/ts.performance.js";
 
 /* Tracing events for the compiler. */
 // should be used as tracing?.___

@@ -18,7 +18,7 @@ import {
   ModuleKind,
   some,
   toPath,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 /** @internal */
 export function getFileEmitOutput(program, sourceFile, emitOnlyDtsFiles, cancellationToken, customTransformers, forceDtsEmit) {

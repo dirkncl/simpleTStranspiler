@@ -95,7 +95,7 @@ import {
   visitNode,
   visitNodes,
   walkUpParenthesizedExpressions,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 
 function syntacticResult(type, reportFallback = true) {

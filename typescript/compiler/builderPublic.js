@@ -3,7 +3,7 @@ import {
   createBuilderProgram,
   createRedirectedBuilderProgram,
   getBuilderCreationParameters,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 export function createSemanticDiagnosticsBuilderProgram(newProgramOrRootNames, hostOrOptions, oldProgramOrHost, configFileParsingDiagnosticsOrOldProgram, configFileParsingDiagnostics, projectReferences) {
     return createBuilderProgram(BuilderProgramKind.SemanticDiagnosticsBuilderProgram, getBuilderCreationParameters(newProgramOrRootNames, hostOrOptions, oldProgramOrHost, configFileParsingDiagnosticsOrOldProgram, configFileParsingDiagnostics, projectReferences));

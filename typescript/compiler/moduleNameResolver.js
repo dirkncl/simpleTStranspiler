@@ -89,7 +89,7 @@ import {
   version,
   versionMajorMinor,
   VersionRange,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 
 /** @internal */

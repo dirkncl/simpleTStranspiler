@@ -84,9 +84,9 @@ import {
   UpToDateStatusType,
   version,
   WatchType,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
-import * as performance from "./_namespaces/ts.performance.js";
+import * as performance from "./namespaces/ts.performance.js";
 
 const minimumDate = new Date(-8640000000000000);
 

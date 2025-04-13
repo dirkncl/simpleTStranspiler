@@ -757,9 +757,9 @@ import {
   walkUpParenthesizedExpressions,
   walkUpParenthesizedTypes,
   walkUpParenthesizedTypesAndGetParentAndChild,
-} from "./_namespaces/ts.js";
-import * as moduleSpecifiers from "./_namespaces/ts.moduleSpecifiers.js";
-import * as performance from "./_namespaces/ts.performance.js";
+} from "./namespaces/ts.js";
+import * as moduleSpecifiers from "./namespaces/ts.moduleSpecifiers.js";
+import * as performance from "./namespaces/ts.performance.js";
 
 const ambientModuleSymbolRegex = /^".+"$/;
 
@@ -42355,7 +42355,7 @@ export function createTypeChecker(host) {
                     else {
                         // Node is not an augmentation and is not located on the script level.
                         // This means that this is declaration of ambient module that is located in other module or namespace which is prohibited.
-                        error(node.name, Diagnostics.Ambient_modules_cannot_be_nested_in_other_modules_or_namespaces);
+                        error(node.name, Diagnostics.Ambient_modules_cannot_be_nested_in_other_modules_ornamespaces);
                     }
                 }
             }

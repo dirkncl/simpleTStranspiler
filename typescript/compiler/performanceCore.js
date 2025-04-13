@@ -1,4 +1,4 @@
-import { isNodeLikeSystem } from "./_namespaces/ts.js";
+import { isNodeLikeSystem } from "./namespaces/ts.js";
 
 function tryGetPerformance() {
     if (isNodeLikeSystem()) {

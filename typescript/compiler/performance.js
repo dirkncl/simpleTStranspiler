@@ -4,7 +4,7 @@ import {
   sys,
   timestamp,
   tryGetNativePerformanceHooks,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 let perfHooks;
 

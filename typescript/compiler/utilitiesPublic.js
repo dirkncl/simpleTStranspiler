@@ -125,7 +125,7 @@ import {
   stringToToken,
   SyntaxKind,
   tryCast,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 export function isExternalModuleNameRelative(moduleName) {
     // TypeScript 1.0 spec (April 2014): 11.2.1

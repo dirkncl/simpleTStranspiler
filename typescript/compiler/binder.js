@@ -190,9 +190,9 @@ import {
   unescapeLeadingUnderscores,
   unreachableCodeIsError,
   unusedLabelIsError,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
-import * as performance from "./_namespaces/ts.performance.js";
+import * as performance from "./namespaces/ts.performance.js";
 
 
 /** @internal */

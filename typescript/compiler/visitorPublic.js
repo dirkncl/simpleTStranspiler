@@ -90,7 +90,7 @@ import {
   singleOrUndefined,
   some,
   SyntaxKind,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 export function visitNode(node, visitor, test, lift) {
     if (node === undefined) {

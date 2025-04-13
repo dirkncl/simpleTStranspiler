@@ -52,7 +52,7 @@ import {
   updateWatchingWildcardDirectories,
   version,
   WatchType,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 export function readBuilderProgram(compilerOptions, host) {
     const buildInfoPath = getTsBuildInfoEmitOutputFilePath(compilerOptions);

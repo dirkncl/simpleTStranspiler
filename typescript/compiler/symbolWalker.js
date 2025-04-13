@@ -6,7 +6,7 @@ import {
   ObjectFlags,
   SyntaxKind,
   TypeFlags,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 /** @internal */
 export function createGetSymbolWalker(getRestTypeOfSignature, getTypePredicateOfSignature, getReturnTypeOfSignature, getBaseTypes, resolveStructuredTypeMembers, getTypeOfSymbol, getResolvedSymbol, getConstraintOfTypeParameter, getFirstIdentifier, getTypeArguments) {

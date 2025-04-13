@@ -89,7 +89,7 @@ import {
   WatchDirectoryFlags,
   WatchDirectoryKind,
   WatchFileKind,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 
 

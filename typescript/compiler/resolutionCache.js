@@ -51,7 +51,7 @@ import {
   trace,
   updateResolutionField,
   WatchDirectoryFlags,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 /** @internal */
 export function removeIgnoredPath(path) {

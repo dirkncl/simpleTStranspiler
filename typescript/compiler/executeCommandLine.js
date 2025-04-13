@@ -66,7 +66,7 @@ import {
   tscBuildOption,
   validateLocaleAndSetLanguage,
   version,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 import * as performance from "./performance.js";
 
 // /** @internal */

@@ -14,7 +14,7 @@ import {
   lastOrUndefined,
   some,
   startsWith,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 
 /**

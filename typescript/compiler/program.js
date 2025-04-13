@@ -233,9 +233,9 @@ import {
   versionMajorMinor,
   walkUpParenthesizedExpressions,
   writeFileEnsuringDirectories,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
-import * as performance from "./_namespaces/ts.performance.js";
+import * as performance from "./namespaces/ts.performance.js";
 
 export function findConfigFile(searchPath, fileExists, configName = "tsconfig.json") {
     return forEachAncestorDirectory(searchPath, ancestor => {

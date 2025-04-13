@@ -69,7 +69,7 @@ import {
   sys,
   WatchLogLevel,
   whitespaceOrMapCommentRegExp,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 const sysFormatDiagnosticsHost = sys ? {
     getCurrentDirectory: () => sys.getCurrentDirectory(),

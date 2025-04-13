@@ -35,7 +35,7 @@ import {
   libs,
   removePrefix,
   removeSuffix,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 
 /** @internal */

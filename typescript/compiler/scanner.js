@@ -21,7 +21,7 @@ import {
   ScriptTarget,
   SyntaxKind,
   TokenFlags,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 /** @internal */
 export function tokenIsIdentifierOrKeyword(token) {

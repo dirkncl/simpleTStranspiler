@@ -117,9 +117,9 @@ import {
   TransformFlags,
   unescapeLeadingUnderscores,
   unsetNodeChildren,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
-import * as performance from "./_namespaces/ts.performance.js";
+import * as performance from "./namespaces/ts.performance.js";
 
 // const enum SignatureFlags {
 //     None = 0,

@@ -43,7 +43,7 @@ import {
   toPath as ts_toPath,
   WatchDirectoryFlags,
   WatchFileKind,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 /** @internal */
 export function createCachedDirectoryStructureHost(host, currentDirectory, useCaseSensitiveFileNames) {
