@@ -26,9 +26,9 @@ import {
   toFileNameLowerCase,
   Version,
   versionMajorMinor,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
-import { stringifyIndented } from "./_namespaces/ts.server.js";
+import { stringifyIndented } from "./namespaces/ts.server.js";
 
 /** @internal */
 export function isTypingUpToDate(cachedTyping, availableTypingVersions) {

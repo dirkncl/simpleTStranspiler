@@ -1,4 +1,4 @@
-import { sys } from "./_namespaces/ts.js";
+import { sys } from "./namespaces/ts.js";
 /** @internal */
 export const ActionSet = "action::set";
 /** @internal */
