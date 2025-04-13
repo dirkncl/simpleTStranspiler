@@ -1,4 +1,4 @@
-import { StringCompletions } from "./_namespaces/ts.Completions.js";
+import { StringCompletions } from "./namespaces/ts.Completions.js";
 
 import {
   addToSeen,
@@ -283,7 +283,7 @@ import {
   unescapeLeadingUnderscores,
   UnionReduction,
   walkUpParenthesizedExpressions,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 // Exported only for tests
 /** @internal */

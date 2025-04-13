@@ -95,7 +95,7 @@ import {
   TypeFlags,
   unescapeLeadingUnderscores,
   usingSingleLineStringWriter,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 
 const leadingParameterNameCommentRegexFactory = (name) => {

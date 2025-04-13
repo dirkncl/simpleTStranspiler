@@ -24,7 +24,7 @@ import {
   NodeFlags,
   skipTrivia,
   SyntaxKind,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 
 /**

@@ -30,7 +30,7 @@ import {
   positionsAreOnSameLine,
   startsWith,
   SyntaxKind,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 /** @internal */
 export function collectElements(sourceFile, cancellationToken) {

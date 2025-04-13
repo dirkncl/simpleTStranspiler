@@ -32,7 +32,7 @@ import {
   resolveModuleName,
   textChanges,
   tryRemoveDirectoryPrefix,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 
 /** @internal */

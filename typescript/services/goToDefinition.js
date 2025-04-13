@@ -1,4 +1,4 @@
-import { isContextWithStartAndEndNode } from "./_namespaces/ts.FindAllReferences.js";
+import { isContextWithStartAndEndNode } from "./namespaces/ts.FindAllReferences.js";
 import {
   AssignmentDeclarationKind,
   canHaveSymbol,
@@ -90,7 +90,7 @@ import {
   tryGetModuleSpecifierFromDeclaration,
   TypeFlags,
   unescapeLeadingUnderscores,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 /** @internal */
 export function getDefinitionAtPosition(program, sourceFile, position, searchOtherFilesOnly, stopAtAlias) {

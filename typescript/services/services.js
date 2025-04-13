@@ -197,10 +197,10 @@ import {
   TypeFlags,
   typeToDisplayParts,
   updateSourceFile,
-} from "./_namespaces/ts.js";
-import * as NavigateTo from "./_namespaces/ts.NavigateTo.js";
-import * as NavigationBar from "./_namespaces/ts.NavigationBar.js";
-import { containsJsx, createNewFileName, getStatementsToMove, } from "./_namespaces/ts.refactor.js";
+} from "./namespaces/ts.js";
+import * as NavigateTo from "./namespaces/ts.NavigateTo.js";
+import * as NavigationBar from "./namespaces/ts.NavigationBar.js";
+import { containsJsx, createNewFileName, getStatementsToMove, } from "./namespaces/ts.refactor.js";
 import * as classifier from "./classifier.js";
 import * as classifier2020 from "./classifier2020.js";
 

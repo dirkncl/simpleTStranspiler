@@ -37,7 +37,7 @@ import {
   SyntaxKind,
   textSpanIntersectsWith,
   TokenClass,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 
 /** The classifier is used for syntactic highlighting in editors via the TSServer */

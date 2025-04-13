@@ -42,7 +42,7 @@ import {
   timestamp,
   unescapeLeadingUnderscores,
   unmangleScopedPackageName,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 /** @internal */
 export var ImportKind;

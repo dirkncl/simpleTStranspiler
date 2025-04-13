@@ -36,7 +36,7 @@ import {
   tryGetImportFromModuleSpecifier,
   tryRemoveSuffix,
   TypeFlags,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 /** @internal */
 export function getRenameInfo(program, sourceFile, position, preferences) {

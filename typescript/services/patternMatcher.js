@@ -9,7 +9,7 @@ import {
   min,
   ScriptTarget,
   startsWith,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 
 // Note(cyrusn): this enum is ordered from strongest match type to weakest match type.

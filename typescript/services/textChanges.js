@@ -114,7 +114,7 @@ import {
   toSorted,
   visitEachChild,
   visitNodes,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 /**
  * Currently for simplicity we store recovered positions on the node itself.

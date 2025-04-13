@@ -11,7 +11,7 @@ import {
   isString,
   map,
   textChanges,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 const errorCodeToFixes = createMultiMap();
 const fixIdToRegistration = new Map();

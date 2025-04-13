@@ -53,7 +53,7 @@ import {
   SyntaxKind,
   tryCast,
   walkUpBindingElementsAndPatterns,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 /**
  * Creates the imports map and returns an ImportTracker that uses it. Call this lazily to avoid calling `getDirectImportsMap` unnecessarily.

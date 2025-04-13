@@ -275,7 +275,7 @@ import {
   unescapeLeadingUnderscores,
   visitEachChild,
   walkUpParenthesizedExpressions,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 
 // These utilities are common to multiple language service features.

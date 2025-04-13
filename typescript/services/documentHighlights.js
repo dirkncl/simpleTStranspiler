@@ -57,7 +57,7 @@ import {
   toArray,
   toPath,
   tryCast,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 
 /** @internal */

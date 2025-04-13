@@ -40,7 +40,7 @@ import {
   skipAlias,
   some,
   SyntaxKind,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 
 const visitedNestedConvertibleFunctions = new Map();

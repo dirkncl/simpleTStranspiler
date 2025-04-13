@@ -68,7 +68,7 @@ import {
   SymbolFlags,
   SyntaxKind,
   usingSingleLineStringWriter,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 
 /** Indictates whether a node is named function or class expression. */

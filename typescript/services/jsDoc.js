@@ -52,7 +52,7 @@ import {
   textPart,
   typeAliasNamePart,
   typeParameterNamePart,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 
 const jsDocTagNames = [

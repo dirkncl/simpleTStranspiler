@@ -83,7 +83,7 @@ import {
   textPart,
   TypeFormatFlags,
   typeToDisplayParts,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 
 const symbolDisplayNodeBuilderFlags = NodeBuilderFlags.OmitParameterModifiers | NodeBuilderFlags.IgnoreErrors | NodeBuilderFlags.UseAliasDefinedOutsideCurrentScope;

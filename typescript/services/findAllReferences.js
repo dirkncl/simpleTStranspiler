@@ -5,7 +5,7 @@ import {
   getExportInfo,
   getImportOrExportSymbol,
   ImportExport,
-} from "./_namespaces/ts.FindAllReferences.js";
+} from "./namespaces/ts.FindAllReferences.js";
 
 import {
   addToSeen,
@@ -203,7 +203,7 @@ import {
   tryCast,
   tryGetClassExtendingExpressionWithTypeArguments,
   tryGetImportFromModuleSpecifier,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 /** @internal */
 export var DefinitionKind;

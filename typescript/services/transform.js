@@ -1,4 +1,4 @@
-import { concatenate, factory, fixupCompilerOptions, isArray, transformNodes, } from "./_namespaces/ts.js";
+import { concatenate, factory, fixupCompilerOptions, isArray, transformNodes, } from "./namespaces/ts.js";
 
 /**
  * Transform one or more nodes using the supplied transformers.

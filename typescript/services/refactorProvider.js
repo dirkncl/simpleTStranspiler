@@ -1,5 +1,5 @@
-import { arrayFrom, flatMapIterator, } from "./_namespaces/ts.js";
-import { refactorKindBeginsWith } from "./_namespaces/ts.refactor.js";
+import { arrayFrom, flatMapIterator, } from "./namespaces/ts.js";
+import { refactorKindBeginsWith } from "./namespaces/ts.refactor.js";
 // A map with the refactor code as key, the refactor itself as value
 // e.g.  nonSuggestableRefactors[refactorCode] -> the refactor you want
 const refactors = new Map();

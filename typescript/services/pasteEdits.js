@@ -14,7 +14,7 @@ import {
   rangeContainsRange,
   SymbolFlags,
   textChanges,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 import { addTargetFileImports } from "./refactors/helpers.js";
 import { addExportsInOldFile, getExistingLocals, getUsageInfo, } from "./refactors/moveToFile.js";
 

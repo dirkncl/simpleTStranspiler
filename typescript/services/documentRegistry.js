@@ -20,7 +20,7 @@ import {
   toPath,
   tracing,
   updateLanguageServiceSourceFile,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 
 /** @internal */

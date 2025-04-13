@@ -72,7 +72,7 @@ import {
   setTextRange,
   SyntaxKind,
   unescapeLeadingUnderscores,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 /**
  * Matches all whitespace characters in a string. Eg:

@@ -15,7 +15,7 @@ import {
   PatternMatchKind,
   ScriptElementKind,
   SyntaxKind,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 
 /** @internal */

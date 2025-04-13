@@ -62,7 +62,7 @@ import {
   symbolToDisplayParts,
   SyntaxKind,
   tryCast,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 
 var InvocationKind;

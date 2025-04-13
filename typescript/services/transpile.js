@@ -22,7 +22,7 @@ import {
   ScriptTarget,
   toPath,
   transpileOptionValueCompilerOptions,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 
 const optionsRedundantWithVerbatimModuleSyntax = new Set([

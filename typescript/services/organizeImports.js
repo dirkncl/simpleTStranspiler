@@ -40,7 +40,7 @@ import {
   toSorted,
   TransformFlags,
   tryCast,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 /**
  * Organize imports by:

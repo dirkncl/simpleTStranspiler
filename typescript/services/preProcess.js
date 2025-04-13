@@ -8,7 +8,7 @@ import {
   scanner,
   ScriptTarget,
   SyntaxKind,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 export function preProcessFile(sourceText, readImportFiles = true, detectJavaScriptImports = false) {
     const pragmaContext = {

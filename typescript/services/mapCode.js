@@ -22,7 +22,7 @@ import {
   some,
   SyntaxKind,
   textChanges,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 
 /** @internal */

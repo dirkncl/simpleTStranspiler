@@ -42,7 +42,7 @@ import {
   SyntaxKind,
   textSpanIntersectsWithPosition,
   textSpansEqual,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 /** @internal */
 export function getSmartSelectionRange(pos, sourceFile) {

@@ -6,7 +6,7 @@ import {
   getDefaultCommitCharacters,
   getPropertiesForObjectExpression,
   SortText,
-} from "./_namespaces/ts.Completions.js";
+} from "./namespaces/ts.Completions.js";
 
 import {
   addToSeen,
@@ -136,7 +136,7 @@ import {
   unmangleScopedPackageName,
   walkUpParenthesizedExpressions,
   walkUpParenthesizedTypes,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 
 const kindPrecedence = {

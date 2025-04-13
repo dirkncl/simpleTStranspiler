@@ -6,7 +6,7 @@ import {
   rangeContainsPosition,
   rangeContainsRange,
   SymbolFlags,
-} from "./_namespaces/ts.js";
+} from "./namespaces/ts.js";
 
 import { isInImport } from "./refactors/moveToFile.js";
 
