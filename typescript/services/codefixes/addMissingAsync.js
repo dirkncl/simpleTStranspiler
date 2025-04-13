@@ -2,7 +2,7 @@ import {
   codeFixAll,
   createCodeFixAction,
   registerCodeFix,
-} from "../_namespaces/ts.codefix.js";
+} from "../namespaces/ts.codefix.js";
 
 import {
   createTextSpanFromNode,
@@ -24,7 +24,7 @@ import {
   textChanges,
   textSpanEnd,
   textSpansEqual,
-} from "../_namespaces/ts.js";
+} from "../namespaces/ts.js";
 
 const fixId = "addMissingAsync";
 

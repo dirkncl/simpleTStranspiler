@@ -3,7 +3,7 @@ import {
   registerCodeFix,
   setJsonCompilerOptionValue,
   setJsonCompilerOptionValues,
-} from "../_namespaces/ts.codefix.js";
+} from "../namespaces/ts.codefix.js";
 
 import {
   Diagnostics,
@@ -14,7 +14,7 @@ import {
   ModuleKind,
   ScriptTarget,
   textChanges,
-} from "../_namespaces/ts.js";
+} from "../namespaces/ts.js";
 
 
 registerCodeFix({

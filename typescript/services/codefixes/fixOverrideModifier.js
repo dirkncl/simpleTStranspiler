@@ -2,7 +2,7 @@ import {
   codeFixAll,
   createCodeFixActionMaybeFixAll,
   registerCodeFix,
-} from "../_namespaces/ts.codefix.js";
+} from "../namespaces/ts.codefix.js";
 
 import {
   Debug,
@@ -26,7 +26,7 @@ import {
   skipTrivia,
   SyntaxKind,
   textChanges,
-} from "../_namespaces/ts.js";
+} from "../namespaces/ts.js";
 
 
 const fixName = "fixOverrideModifier";

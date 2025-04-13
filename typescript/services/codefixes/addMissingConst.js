@@ -2,7 +2,7 @@ import {
   codeFixAll,
   createCodeFixAction,
   registerCodeFix,
-} from "../_namespaces/ts.codefix.js";
+} from "../namespaces/ts.codefix.js";
 
 import {
   Diagnostics,
@@ -18,7 +18,7 @@ import {
   SyntaxKind,
   textChanges,
   tryAddToSet,
-} from "../_namespaces/ts.js";
+} from "../namespaces/ts.js";
 
 const fixId = "addMissingConst";
 

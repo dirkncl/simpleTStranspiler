@@ -1,5 +1,5 @@
-import { codeFixAll, createCodeFixAction, registerCodeFix, } from "../_namespaces/ts.codefix.js";
-import { Diagnostics, hasProperty, quote, textChanges, } from "../_namespaces/ts.js";
+import { codeFixAll, createCodeFixAction, registerCodeFix, } from "../namespaces/ts.codefix.js";
+import { Diagnostics, hasProperty, quote, textChanges, } from "../namespaces/ts.js";
 
 const fixIdExpression = "fixInvalidJsxCharacters_expression";
 const fixIdHtmlEntity = "fixInvalidJsxCharacters_htmlEntity";

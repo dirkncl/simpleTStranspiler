@@ -36,7 +36,7 @@ import {
   SymbolFlags,
   SyntaxKind,
   textChanges,
-} from "../_namespaces/ts.js";
+} from "../namespaces/ts.js";
 
 /** @internal */
 export function generateAccessorFromProperty(file, program, start, end, context, _actionName) {

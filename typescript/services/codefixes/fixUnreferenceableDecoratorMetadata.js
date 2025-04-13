@@ -1,7 +1,7 @@
 import {
   createCodeFixActionWithoutFixAll,
   registerCodeFix,
-} from "../_namespaces/ts.codefix.js";
+} from "../namespaces/ts.codefix.js";
 
 import {
   append,
@@ -21,7 +21,7 @@ import {
   SyntaxKind,
   textChanges,
   tryCast,
-} from "../_namespaces/ts.js";
+} from "../namespaces/ts.js";
 
 
 const fixId = "fixUnreferenceableDecoratorMetadata";

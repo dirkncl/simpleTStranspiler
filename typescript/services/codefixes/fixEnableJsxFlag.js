@@ -3,13 +3,13 @@ import {
   createCodeFixActionWithoutFixAll,
   registerCodeFix,
   setJsonCompilerOptionValue,
-} from "../_namespaces/ts.codefix.js";
+} from "../namespaces/ts.codefix.js";
 
 import {
   Diagnostics,
   factory,
   textChanges,
-} from "../_namespaces/ts.js";
+} from "../namespaces/ts.js";
 
 
 const fixID = "fixEnableJsxFlag";

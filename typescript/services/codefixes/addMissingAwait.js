@@ -3,7 +3,7 @@ import {
   createCodeFixAction,
   createCodeFixActionWithoutFixAll,
   registerCodeFix,
-} from "../_namespaces/ts.codefix.js";
+} from "../namespaces/ts.codefix.js";
 
 import {
   compact,
@@ -38,7 +38,7 @@ import {
   tryAddToSet,
   tryCast,
   TypeFlags,
-} from "../_namespaces/ts.js";
+} from "../namespaces/ts.js";
 
 
 const fixId = "addMissingAwait";

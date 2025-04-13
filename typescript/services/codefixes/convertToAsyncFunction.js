@@ -2,7 +2,7 @@ import {
   codeFixAll,
   createCodeFixAction,
   registerCodeFix,
-} from "../_namespaces/ts.codefix.js";
+} from "../namespaces/ts.codefix.js";
 
 import {
   canBeConvertedToAsync,
@@ -60,7 +60,7 @@ import {
   textChanges,
   tryCast,
   UnionReduction,
-} from "../_namespaces/ts.js";
+} from "../namespaces/ts.js";
 
 const fixId = "convertToAsyncFunction";
 const errorCodes = [Diagnostics.This_may_be_converted_to_an_async_function.code];

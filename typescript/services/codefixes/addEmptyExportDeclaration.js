@@ -1,5 +1,5 @@
-import { createCodeFixActionWithoutFixAll, registerCodeFix, } from "../_namespaces/ts.codefix.js";
-import { Diagnostics, factory, textChanges, } from "../_namespaces/ts.js";
+import { createCodeFixActionWithoutFixAll, registerCodeFix, } from "../namespaces/ts.codefix.js";
+import { Diagnostics, factory, textChanges, } from "../namespaces/ts.js";
 
 registerCodeFix({
     errorCodes: [

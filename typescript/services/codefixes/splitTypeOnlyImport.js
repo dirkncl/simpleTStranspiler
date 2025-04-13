@@ -2,7 +2,7 @@ import {
   codeFixAll,
   createCodeFixAction,
   registerCodeFix,
-} from "../_namespaces/ts.codefix.js";
+} from "../namespaces/ts.codefix.js";
 
 import {
   Debug,
@@ -12,7 +12,7 @@ import {
   getTokenAtPosition,
   isImportDeclaration,
   textChanges,
-} from "../_namespaces/ts.js";
+} from "../namespaces/ts.js";
 
 const errorCodes = [Diagnostics.A_type_only_import_can_specify_a_default_import_or_named_bindings_but_not_both.code];
 const fixId = "splitTypeOnlyImport";

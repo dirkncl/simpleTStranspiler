@@ -2,7 +2,7 @@ import {
   codeFixAll,
   createCodeFixAction,
   registerCodeFix,
-} from "../_namespaces/ts.codefix.js";
+} from "../namespaces/ts.codefix.js";
 
 import {
   cast,
@@ -13,7 +13,7 @@ import {
   isPropertySignature,
   isTypeLiteralNode,
   textChanges,
-} from "../_namespaces/ts.js";
+} from "../namespaces/ts.js";
 
 
 const fixId = "convertLiteralTypeToMappedType";

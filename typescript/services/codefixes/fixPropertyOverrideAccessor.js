@@ -4,7 +4,7 @@ import {
   generateAccessorFromProperty,
   getAllSupers,
   registerCodeFix,
-} from "../_namespaces/ts.codefix.js";
+} from "../namespaces/ts.codefix.js";
 
 import {
   Debug,
@@ -16,7 +16,7 @@ import {
   isClassLike,
   singleOrUndefined,
   unescapeLeadingUnderscores,
-} from "../_namespaces/ts.js";
+} from "../namespaces/ts.js";
 
 
 const errorCodes = [

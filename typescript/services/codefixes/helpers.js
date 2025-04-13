@@ -67,7 +67,7 @@ import {
   visitEachChild,
   visitNode,
   visitNodes,
-} from "../_namespaces/ts.js";
+} from "../namespaces/ts.js";
 
 /**
  * Finds members of the resolved type that are missing in the class pointed to by class decl

@@ -3,7 +3,7 @@ import {
   createCombinedCodeActions,
   eachDiagnostic,
   registerCodeFix,
-} from "../_namespaces/ts.codefix.js";
+} from "../namespaces/ts.codefix.js";
 
 import {
   arrayFrom,
@@ -118,7 +118,7 @@ import {
   toSorted,
   tryCast,
   tryGetModuleSpecifierFromDeclaration,
-} from "../_namespaces/ts.js";
+} from "../namespaces/ts.js";
 
 
 /** @internal */

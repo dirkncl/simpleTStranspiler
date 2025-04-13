@@ -2,7 +2,7 @@ import {
   codeFixAll,
   createCodeFixAction,
   registerCodeFix,
-} from "../_namespaces/ts.codefix.js";
+} from "../namespaces/ts.codefix.js";
 
 import {
   Debug,
@@ -12,7 +12,7 @@ import {
   getTokenAtPosition,
   isConstructorDeclaration,
   textChanges,
-} from "../_namespaces/ts.js";
+} from "../namespaces/ts.js";
 
 const fixId = "constructorForDerivedNeedSuperCall";
 const errorCodes = [Diagnostics.Constructors_for_derived_classes_must_contain_a_super_call.code];

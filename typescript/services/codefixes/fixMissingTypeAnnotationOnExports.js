@@ -7,7 +7,7 @@ import {
   typeNodeToAutoImportableTypeNode,
   typePredicateToAutoImportableTypeNode,
   typeToMinimizedReferenceType,
-} from "../_namespaces/ts.codefix.js";
+} from "../namespaces/ts.codefix.js";
 
 import {
   createPrinter,
@@ -69,9 +69,9 @@ import {
   TypeFlags,
   UnionReduction,
   walkUpParenthesizedExpressions,
-} from "../_namespaces/ts.js";
+} from "../namespaces/ts.js";
 
-import { getIdentifierForNode } from "../_namespaces/ts.refactor.js";
+import { getIdentifierForNode } from "../namespaces/ts.refactor.js";
 
 const fixId = "fixMissingTypeAnnotationOnExports";
 const addAnnotationFix = "add-annotation";

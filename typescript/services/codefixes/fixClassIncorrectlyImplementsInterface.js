@@ -5,7 +5,7 @@ import {
   createMissingMemberNodes,
   getNoopSymbolTrackerWithResolver,
   registerCodeFix,
-} from "../_namespaces/ts.codefix.js";
+} from "../namespaces/ts.codefix.js";
 
 import {
   addToSeen,
@@ -25,7 +25,7 @@ import {
   mapDefined,
   ModifierFlags,
   textChanges,
-} from "../_namespaces/ts.js";
+} from "../namespaces/ts.js";
 
 
 const errorCodes = [

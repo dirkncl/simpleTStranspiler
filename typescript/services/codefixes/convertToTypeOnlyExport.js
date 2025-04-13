@@ -2,7 +2,7 @@ import {
   codeFixAll,
   createCodeFixAction,
   registerCodeFix,
-} from "../_namespaces/ts.codefix.js";
+} from "../namespaces/ts.codefix.js";
 
 import {
   addToSeen,
@@ -19,7 +19,7 @@ import {
   SyntaxKind,
   textChanges,
   tryCast,
-} from "../_namespaces/ts.js";
+} from "../namespaces/ts.js";
 
 
 const errorCodes = [Diagnostics.Re_exporting_a_type_when_0_is_enabled_requires_using_export_type.code];
