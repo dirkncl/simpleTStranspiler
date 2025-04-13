@@ -80,7 +80,7 @@ import {
   some,
   SyntaxKind,
   TransformFlags,
-} from "../_namespaces/ts.js";
+} from "../namespaces/ts.js";
 
 // Compound nodes
 /** @internal */

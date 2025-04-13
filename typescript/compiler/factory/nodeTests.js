@@ -1,4 +1,4 @@
-import { SyntaxKind, } from "../_namespaces/ts.js";
+import { SyntaxKind, } from "../namespaces/ts.js";
 
 // Literals
 export function isNumericLiteral(node) {

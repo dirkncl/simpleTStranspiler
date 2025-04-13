@@ -1,4 +1,4 @@
-import { objectAllocator, } from "../_namespaces/ts.js";
+import { objectAllocator, } from "../namespaces/ts.js";
 
 /**
  * Creates a `BaseNodeFactory` which can be used to create `Node` instances from the constructors provided by the object allocator.

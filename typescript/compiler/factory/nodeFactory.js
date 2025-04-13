@@ -139,7 +139,7 @@ import {
   TokenFlags,
   TransformFlags,
   visitNode,
-} from "../_namespaces/ts.js";
+} from "../namespaces/ts.js";
 
 let nextAutoGenerateId = 0;
 

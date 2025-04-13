@@ -10,7 +10,7 @@ import {
   orderedRemoveItem,
   some,
   SyntaxKind,
-} from "../_namespaces/ts.js";
+} from "../namespaces/ts.js";
 
 /**
  * Associates a node with the current transformation, initializing

@@ -36,7 +36,7 @@ import {
   skipPartiallyEmittedExpressions,
   some,
   SyntaxKind,
-} from "../_namespaces/ts.js";
+} from "../namespaces/ts.js";
 
 /** @internal */
 export function createParenthesizerRules(factory) {

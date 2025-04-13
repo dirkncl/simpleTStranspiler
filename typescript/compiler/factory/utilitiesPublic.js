@@ -1,4 +1,4 @@
-import { setTextRangePosEnd, SyntaxKind, } from "../_namespaces/ts.js";
+import { setTextRangePosEnd, SyntaxKind, } from "../namespaces/ts.js";
 
 export function setTextRange(range, location) {
     return location ? setTextRangePosEnd(range, location.pos, location.end) : range;

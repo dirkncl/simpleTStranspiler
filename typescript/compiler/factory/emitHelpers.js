@@ -19,7 +19,7 @@ import {
   setInternalEmitFlags,
   setTextRange,
   SyntaxKind,
-} from "../_namespaces/ts.js";
+} from "../namespaces/ts.js";
 
 /** @internal */
 export var PrivateIdentifierKind;

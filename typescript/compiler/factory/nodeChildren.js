@@ -3,7 +3,7 @@ import {
   emptyArray,
   isNodeKind,
   SyntaxKind,
-} from "../_namespaces/ts.js";
+} from "../namespaces/ts.js";
 
 
 const sourceFileToNodeChildren = new WeakMap();
