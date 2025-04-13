@@ -49,7 +49,7 @@ import {
   ModifierFlags,
   SymbolAccessibility,
   SyntaxKind,
-} from "../../_namespaces/ts.js";
+} from "../../namespaces/ts.js";
 
 /** @internal */
 export function canProduceDiagnostics(node) {

@@ -56,7 +56,7 @@ import {
   visitNode,
   visitNodes,
   visitParameterList,
-} from "../_namespaces/ts.js";
+} from "../namespaces/ts.js";
 
 // const enum ES2017SubstitutionFlags {
 //     None = 0,

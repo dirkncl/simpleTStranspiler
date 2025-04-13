@@ -123,7 +123,7 @@ import {
   visitIterationBody,
   visitNode,
   visitNodes,
-} from "../_namespaces/ts.js";
+} from "../namespaces/ts.js";
 
 
 /** @internal */

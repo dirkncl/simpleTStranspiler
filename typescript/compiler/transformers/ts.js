@@ -132,7 +132,7 @@ import {
   visitNode,
   visitNodes,
   visitParameterList,
-} from "../_namespaces/ts.js";
+} from "../namespaces/ts.js";
 
 
 /**

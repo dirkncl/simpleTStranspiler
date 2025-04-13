@@ -5,7 +5,7 @@ import {
   TransformFlags,
   visitEachChild,
   visitNode,
-} from "../_namespaces/ts.js";
+} from "../namespaces/ts.js";
 
 
 /** @internal */

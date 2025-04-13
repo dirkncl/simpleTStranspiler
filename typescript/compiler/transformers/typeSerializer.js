@@ -32,7 +32,7 @@ import {
   skipTypeParentheses,
   SyntaxKind,
   TypeReferenceSerializationKind,
-} from "../_namespaces/ts.js";
+} from "../namespaces/ts.js";
 
 
 /** @internal */

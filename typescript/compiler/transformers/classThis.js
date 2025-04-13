@@ -9,7 +9,7 @@ import {
   setTextRange,
   some,
   SyntaxKind,
-} from "../_namespaces/ts.js";
+} from "../namespaces/ts.js";
 
 /**
  * Creates a class `static {}` block used to assign the static `this` to a `_classThis` (or similar) variable.

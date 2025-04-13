@@ -44,7 +44,7 @@ import {
   visitArray,
   visitEachChild,
   visitNodes,
-} from "../../_namespaces/ts.js";
+} from "../../namespaces/ts.js";
 
 /** @internal */
 export function transformECMAScriptModule(context) {

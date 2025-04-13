@@ -22,7 +22,7 @@ import {
   skipOuterExpressions,
   some,
   SyntaxKind,
-} from "../_namespaces/ts.js";
+} from "../namespaces/ts.js";
 
 
 /**

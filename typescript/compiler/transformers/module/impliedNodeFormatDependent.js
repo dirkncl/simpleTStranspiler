@@ -6,7 +6,7 @@ import {
   SyntaxKind,
   transformECMAScriptModule,
   transformModule,
-} from "../../_namespaces/ts.js";
+} from "../../namespaces/ts.js";
 
 
 /** @internal */
