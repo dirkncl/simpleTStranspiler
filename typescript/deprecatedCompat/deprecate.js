@@ -1,4 +1,4 @@
-import { Debug, formatStringFromArgs, noop, Version, version, } from "./_namespaces/ts.js";
+import { Debug, formatStringFromArgs, noop, Version, version, } from "./namespaces/ts.js";
 
 export let enableDeprecationWarnings = true;
 

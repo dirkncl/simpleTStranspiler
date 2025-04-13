@@ -1,4 +1,4 @@
-import { hasProperty, } from "./_namespaces/ts.js";
+import { hasProperty, } from "./namespaces/ts.js";
 import { deprecate } from "./deprecate.js";
 
 /** @internal @knipignore */
